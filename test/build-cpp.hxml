@@ -1,0 +1,14 @@
+# C++ (hxcpp) build of the test runner. Use run-cpp.sh, which sets up a
+# local haxelib repository pointing to hxcpp.
+-cp src
+-cp ../src
+-cp ../../plutovg/src
+# Optional: PNG decoding of data URIs with the format library (test only).
+-cp ../../format
+# Must come after the format class path to take precedence.
+-cp src-overrides
+-D lunasvg_png
+-main Main
+-dce full
+-D analyzer-optimize
+-cpp bin/cpp

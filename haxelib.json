@@ -1,0 +1,14 @@
+{
+    "name": "lunasvg",
+    "url": "https://github.com/sammycage/lunasvg",
+    "license": "MIT",
+    "tags": ["cross", "svg", "vector", "graphics", "2d"],
+    "description": "Pure Haxe port of lunasvg 3.5.0: SVG parsing and rendering (shapes, paths, gradients, patterns, clipping, masks, markers, CSS) on top of the plutovg port.",
+    "version": "0.1.0",
+    "classPath": "src",
+    "releasenote": "Initial port of lunasvg 3.5.0 (text needs a font provider, images need a decoder).",
+    "contributors": [],
+    "dependencies": {
+        "plutovg": ""
+    }
+}
