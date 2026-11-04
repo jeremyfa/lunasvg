@@ -565,7 +565,7 @@ class SVGElement extends SVGNode {
     /**
      * Calls `callback` on this element and all its descendant elements.
      */
-    public function transverse(callback:SVGElement->Void):Void {
+    public function transverse(callback:(SVGElement) -> Void):Void {
         callback(this);
         for (child in m_children) {
             var element = toSVGElement(child);

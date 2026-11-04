@@ -29,14 +29,14 @@ class Lunasvg {
      * stb_image, which is not ported: without a decoder, `<image>` elements
      * are ignored.
      */
-    public static var imageDecoder:Null<Bytes->Null<plutovg.Surface>> = null;
+    public static var imageDecoder:Null<(Bytes) -> Null<plutovg.Surface>> = null;
 
     /**
      * Loads the bytes of an external resource referenced by `<image href>`
      * (anything but a data URI). Without a loader, external images are
      * ignored.
      */
-    public static var resourceLoader:Null<String->Null<Bytes>> = null;
+    public static var resourceLoader:Null<(String) -> Null<Bytes>> = null;
 
     public static inline function version():Int {
         return VERSION;
