@@ -93,7 +93,7 @@ class Main {
         }
 
         if (lucideDir == null) {
-            var fallback = "../../../../ceramic-gpui/gpui-kit/crates/assets/assets/icons";
+            var fallback = "../../../../glaze-golden/gpui-kit/crates/assets/assets/icons";
             if (Fs.exists(fallback))
                 lucideDir = fallback;
         }
