@@ -226,10 +226,10 @@ class Rect {
 
     /** `Rect::Infinite` */
     public static inline function infinite():Rect {
-        return new Rect(-FLT_MAX / 2, -FLT_MAX / 2, FLT_MAX, FLT_MAX);
+        return new Rect(-FLOAT_MAX / 2, -FLOAT_MAX / 2, FLOAT_MAX, FLOAT_MAX);
     }
 
-    public static inline final FLT_MAX:Float = 3.40282346638528859811704183484516925440e+38;
+    public static inline final FLOAT_MAX:Float = 3.40282346638528859811704183484516925440e+38;
 
     public static inline function fromSize(size:Size):Rect {
         return new Rect(0, 0, size.w, size.h);

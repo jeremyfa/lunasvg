@@ -245,7 +245,7 @@ class SVGParserUtils {
         return value;
     }
 
-    static inline final FLT_MAX:Float = 3.40282346638528859811704183484516925440e+38;
+    static inline final FLOAT_MAX:Float = 3.40282346638528859811704183484516925440e+38;
 
     /**
      * `parseNumber<float>()`, computed in float32 like the C++ template.
@@ -308,7 +308,7 @@ class SVGParserUtils {
         var number = f32(sign * f32(integer + fraction));
         if (exponent != 0)
             number = f32(number * f32(Math.pow(10.0, expsign * exponent)));
-        if (number >= -FLT_MAX && number <= FLT_MAX)
+        if (number >= -FLOAT_MAX && number <= FLOAT_MAX)
             return number;
         return Math.NaN;
     }
